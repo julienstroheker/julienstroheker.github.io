@@ -1,0 +1,162 @@
+---
+layout:     post
+title:      "Create Azure Service Principal for VSTS"
+subtitle:   "Using Azure CLI (x-plat)"
+date:       2016-10-11 12:00:00
+author:     "Julien Stroheker"
+header-img: "img/post-bg-03.jpg"
+---
+
+If you need to interact with your Microsoft Azure subscription through some external services like Visual Studio Team Services (VSTS) or your own Web Application you will need to create an Service Principal application in your Azure Active Directory.
+
+Here is the example in Visual Studio Team Services (VSTS) :
+
+{: .center-image }
+![]({{ site.baseurl }}/img/AzureSPN/ARM_VSTS.png)
+
+You have multiple way to do it.
+
+# Using Docker
+
+If like me, you don't have a good memory to retain all the commands, and have Docker installed somewhere, this part is for you !!
+
+You just have to run the following command :
+
+`docker run -it julienstroheker/dockerazurespn <NameApp> <PasswordApp>`
+
+For example : 
+
+`$ docker run -it julienstroheker/dockerazurespn MyAwesomeApplication MyAw3s0meP@ssw0rd!`
+
+After less than 1 minute, you will have a nice output like this, ready to be copy and paste :
+
+````bash
+        ================== Informations about your new App ==============================
+        Subscription ID                    XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX
+        Subscription Name                  Your Subscription Name
+        Service Principal Client ID:       XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX
+        Service Principal Key:             YourPasswordOrGeneratingARandomOne
+        Tenant ID:                         XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX
+        =================================================================================
+````
+
+# Using Azure CLI
+
+My favorite one because it is cross platform, which means it can be used on Windows/Mac OS/Linux !
+
+### Prerequisites binaries :
+* [Install Node.js](https://nodejs.org/en/download)
+* [Install Azure-CLI](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install)
+
+### 0. Prerequisites commands
+
+Make sure your are using the "ARM" mode with your CLI :
+
+`azure config mode arm`
+
+Initiate the authentication process :
+
+`azure login`
+
+Make sure you are correctly authenticated by listing your subscriptions :
+
+`azure account list`
+
+If you have multiple subscriptions, pick the one that you want to use :
+
+`azure account set "your subscription name"`
+
+
+### 1. Create a SP
+
+The first operation is to create a Service Principal (SP) and associate a password to it by using the command :
+
+`azure ad sp create -n <NameApp> -i <IdentifierUris> -p <Password>`.
+
+> The IdentifierUris could be "a fake" URL.
+
+As output of this command you will need to copy the **Client ID** and use it in the next command (See the **<---- Client ID** in my following example) 
+
+Here an example :
+
+````bash
+λ azure ad sp create -n myAPP -i https://myApp.com/home -p P@ssw0rd!
+info:    Executing command ad sp create
++ Creating application myAPP
++ Creating service principal for application 88b4146e-00f7-40f9-ac3b-c4562d5b113b
+data:    Object Id:               8521c92e-6061-4c71-a4ff-d2d34d11d19a
+data:    Display Name:            myAPP
+data:    Service Principal Names:
+data:                             88b4146e-00f7-40f9-ac3b-c4562d5b113b      <---- Client ID
+data:                             https://myApp.com/home
+info:    ad sp create command OK
+````
+
+### 2. Assign a role to this new SP ###
+
+The next step is to assign a role to this new SP by using the command : 
+
+`azure role assignment create --spn <ClientID> -o <RoleName>`
+
+For example, VSTS need to have the contributor role on your subscription.
+
+Here an example using the Client ID from the previous command :
+````bash
+λ azure role assignment create --spn 88b4146e-00f7-40f9-ac3b-c4562d5b113b -o Contributor
+info:    Executing command role assignment create
++ Finding role with specified name
+/data:    RoleAssignmentId     : /subscriptions/abcf6705-ed9a-4aee-1234-a9064705a1eb/providers/Microsoft.Authorization/roleAssignments/69428b02-8d20-4634-9799-e6dc413e654c
+data:    RoleDefinitionName   : Contributor
+data:    RoleDefinitionId     : b24988ac-6180-42a0-ab88-20f7382dd24c
+data:    Scope                : /subscriptions/abcf6705-ed9a-4aee-1234-a9064705a1eb
+data:    Display Name         : myAPP
+data:    SignInName           : undefined
+data:    ObjectId             : 8521c92e-6061-4c71-a4ff-d2d34d11d19a
+data:    ObjectType           : ServicePrincipal
+data:
++
+info:    role assignment create command OK
+````
+
+> You can get a list of available roles by using the `azure role list` command :
+
+````bash
+λ azure role list
+[.......]
+data:    Name             : Contributor
+data:    Actions          : 0=*
+data:    NotActions       : 0=Microsoft.Authorization/*/Delete, 1=Microsoft.Authorization/*/Write
+data:    IsCustom         : false
+[.....]
+````
+
+This is it !!
+
+### 3. Test / Login as a serviceprincipal ###
+
+You can still validate if everything work fine by intiating a authentication with your new SP by using the following command :
+`azure login -u <ClientID> -p <Password> --tenant <YourTenant> --service-principal`
+
+Here, with the same example :
+````
+λ azure login -u 88b4146e-00f7-40f9-ac3b-c4562d5b113b -p P@ssw0rd! --tenant microsoft.com --service-principal
+info:    Executing command login
+|info:    Added subscription Microsoft Azure Internal Consumption
++
+info:    login command OK
+````
+
+In the VSTS context, thanks to all this commands you should be able to fill the "Add Azure Resource Manager Service Endpoint" form.
+
+# Using PowerShell
+
+You can refer here : [Official Microsoft documentation](https://azure.microsoft.com/en-us/documentation/articles/resource-group-authenticate-service-principal)
+
+# Using Portal
+
+You can refer here : [Official Microsoft documentation](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/)
+
+# Conclusion and resources
+
+* [Official Microsoft documentation](https://azure.microsoft.com/en-us/documentation/articles/resource-group-authenticate-service-principal)
+* [GitHub repository of the Docker Application](https://github.com/julienstroheker/DockerAzureSPN)
