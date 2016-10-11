@@ -1,6 +1,6 @@
 /*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
- * Copyright 2015 Start Bootstrap
+ * jstroheker Blog v1.0.0 (http://blog.jstroheker.com)
+ * Copyright 2016 Julien Stroheker
  * Licensed under MIT (https://spdx.org/licenses/MIT)
  */
 
@@ -400,15 +400,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
-}
-
-.center-image
-{
-    margin: 0 auto;
-    display: block;
-}
-
-.pad-text
-{
-    padding-left: 15px;
 }
