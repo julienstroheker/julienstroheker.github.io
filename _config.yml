@@ -1,5 +1,5 @@
 # Site settings
-title: Julien Stroheker's' Blog
+title: Ju Stroh's blog
 header-img: img/home-bg.jpg
 email: juliens@microsoft.com
 copyright_name: jstroheker.com
@@ -10,9 +10,7 @@ twitter_username: Ju_Stroh
 github_username:  julienstroheker
 email_username:  juliens@microsoft.com
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-85543854-1
 
 # Build settings
 markdown: kramdown

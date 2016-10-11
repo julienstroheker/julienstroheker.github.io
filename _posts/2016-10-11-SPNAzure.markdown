@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Create Azure Service Principal for VSTS"
-subtitle:   "Using Azure CLI (x-plat)"
+subtitle:   "Using Docker / Azure CLI / PowerShell / Portal"
 date:       2016-10-11 12:00:00
 author:     "Julien Stroheker"
 header-img: "img/post-bg-03.jpg"
@@ -11,8 +11,7 @@ If you need to interact with your Microsoft Azure subscription through some exte
 
 Here is the example in Visual Studio Team Services (VSTS) :
 
-{: .center-image }
-![]({{ site.baseurl }}/img/AzureSPN/ARM_VSTS.png)
+![]({{ site.baseurl }}/img/AzureSPN/ARM_VSTS.png){: .center-image }
 
 You have multiple way to do it.
 
