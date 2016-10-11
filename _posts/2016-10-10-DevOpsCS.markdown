@@ -7,43 +7,249 @@ author:     "Julien Stroheker"
 header-img: "img/post-bg-01.jpg"
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+When people ask me : "Hey Julien, how I can learn DevOps ?", my anwser is around experience and practices.
 
-Test code 
+So usally people are asking : "Do you have good resources for examples or exercices around DevOps Practices" instead of doing research eveytime for the same resources 
+I decided to start this blog post with all the resources related to DevOps Practices : Blogs, GitHub Repo, Videos, Books ...
 
-`
-npm install -g toto
-`
+With the time, I realised that I am always referering to the same links, this how I decided to start this Cheat Sheet ! 
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+An easy way to everything in one and same place :)
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+> I originally posted this article in my previous blog on technet, but I will only update this one for now.
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+----------------------------
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+![]({{ site.baseurl }}/img/CheatSheet/DevOpsCheatSheetHeader.png){: .center-image }
 
-<h2 class="section-heading">The Final Frontier</h2>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+**UPDATE** : We just updated the HOL on Parts Unlimited and Parts Unlimited MRP check this out :
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+* [https://microsoft.github.io/PartsUnlimitedMRP](https://microsoft.github.io/PartsUnlimitedMRP)
+* [https://microsoft.github.io/PartsUnlimited](https://microsoft.github.io/PartsUnlimited)
 
-<blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+Your boss has asked you to do DevOps ? No surprise as the term DevOps has become a trendy word. DevOps however is more than just Devs and Ops working together. It is not something you can buy with your credit card. The efficiencies the process provides on behalf of a supported organization can yield increased productivity between IT Professionals, Developers and Business Decision Makers.
 
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+Yes… But where I'm supposed to start ??? What will be my learning path ?
 
-<h2 class="section-heading">Reaching for the Stars</h2>
+That's why I'm offering to you all my links from where I learned, learn and still learning every day.
 
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+![]({{ site.baseurl }}/img/CheatSheet/DevOpsLearningPathMaze.jpg){: .center-image }
 
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-sample-image.jpg" alt="Post Sample Image">
-</a>
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+## Introduction to DevOps ##
+### Videos / Courses / Shows ###
+[Channel 9 : DevOps Fundamentals](https://channel9.msdn.com/Series/DevOps-Fundamentals)
 
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+**A MUST TO START !!** This series takes you through the fundamentals of DevOps, starting with an introduction to the concepts and then drills into DevOps practices. 
+It will cover the basics of the most commonly implemented practices and talk you through technical demos for each.
 
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+* [Introduction to DevOps](https://channel9.msdn.com/Series/DevOps-Fundamentals/Introduction-to-DevOps)
+* [Infrastructure as Code](https://channel9.msdn.com/Series/DevOps-Fundamentals/Infrastructure-as-Code)
+* [Automated Testing](https://channel9.msdn.com/Series/DevOps-Fundamentals/Automated-Testing)
+* [Continuous Integration](https://channel9.msdn.com/Series/DevOps-Fundamentals/Continuous-Integration)
+* [Continuous Integration and Release Management](https://channel9.msdn.com/Series/DevOps-Fundamentals/Continuous-Deployment-and-Release-Management)
+* [Configuration Management](https://channel9.msdn.com/Series/DevOps-Fundamentals/Configuration-Management)
+* [Application Performance Monitoring and Availability Monitoring](https://channel9.msdn.com/Series/DevOps-Fundamentals/Application-Performance-Monitoring-and-Availability-Monitoring)
 
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+[Channel 9 : DevOps Gamification](https://channel9.msdn.com/Blogs/DevOps-Gamification)
+
+* [What is Release Management ?](https://channel9.msdn.com/Blogs/DevOps-Gamification/Release-Management--What-is-Release-Management)
+* [What is Continuous Integration ?](https://channel9.msdn.com/Blogs/DevOps-Gamification/Continuous-Integration--What-is-Continuous-Integration)
+* [What is Automated Testing ?](https://channel9.msdn.com/Blogs/DevOps-Gamification/Automated-Testing--What-is-Automated-Testing)
+* [What is Application Performance Management ? Part 1](https://channel9.msdn.com/Blogs/DevOps-Gamification/Application-Performance-Management--What-is-Application-Performance-Management-Part-1)
+* [What is Application Performance Management ? Part 2](https://channel9.msdn.com/Blogs/DevOps-Gamification/Application-Performance-Management--What-is-Application-Performance-Management-Part-2)
+
+[Channel 9 : Breakpoint Show](https://channel9.msdn.com/Blogs/Breakpoint)
+
+* [Automated Testing with Visual Studio](https://channel9.msdn.com/Blogs/Breakpoint/s02e16)
+* [Release Management and PaaS Deployments](https://channel9.msdn.com/Blogs/Breakpoint/s02e11)
+* [A Discussion on DevOps](https://channel9.msdn.com/Blogs/Breakpoint/s02e10)
+* [Getting Valuable Insights from Your App with Application Insight](https://channel9.msdn.com/Blogs/Breakpoint/short2)
+
+[MVA : Integrate, Deliver, and Deploy Continuously with Cloud DevOps by Donovan Brown](https://mva.microsoft.com/en-US/training-courses/integrate-deliver-and-deploy-continuously-with-cloud-devops-14002?l=sTJLtsAsB_5405368485)
+
+{:.pad-text}
+Examine the Microsoft application lifecycle management (ALM) offerings that enable your development teams to be more productive and to embrace a DevOps culture. 
+
+
+[MVA : Enabling DevOps Practices with Visual Studio Online by David Tesar and Donovan Brown](https://mva.microsoft.com/en-US/training-courses/enabling-devops-practices-with-visual-studio-online-build-12478?l=ipCj6MuNB_6305094681)
+
+{:.pad-text}
+Want to improve the quality of your code and get it into customers' hands faster, with fewer delays and a better view of the end-to-end deployment pipeline? 
+Watch this online technical training to learn how IT and Developer practitioners can use Visual Studio Team Services to accelerate their DevOps journey, 
+thanks to flexible, cross-platform capabilities and built-in tasks that integrate with and preserve existing investments.
+
+[Channel 9 : Microsoft DevOps Hackathon Live](https://blogs.technet.microsoft.com/juliens/2016/01/25/hackathon-recorded-session)
+
+{:.pad-text}
+This video splited on five parts will show you one of our Hackathon experience, It will cover a lot of practices with demos.
+
+[Channel 9 / Build / DevOps as a strategy for Business Agility](https://channel9.msdn.com/Events/Build/2015/2-615)
+
+{:.pad-text}
+Discover how your development team can collaborate more easily with operations teams and embrace a DevOps culture to enable continuous delivery.
+
+### Links / Blog Post ###
+
+[Microsoft DevOps Assessment - DevOps Self-Assessment](http://devopsassessment.azurewebsites.net)
+
+{:.pad-text}
+This assessment is the first step in gauging your readiness in the 7 key DevOps practice areas. Completing this assessment will provide you with a framework to better understand your current DevOps practices and where to focus next.
+
+[Blog Post : DevOps for n00bs (ie. Windows people like me)](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)
+
+{:.pad-text}
+After few research I found this awesome blog post from [Ashley McGlone](https://twitter.com/GoateePFE)
+
+### Books ###
+
+[The Phoenix Project](http://itrevolution.com/books/phoenix-project-devops-book)
+
+{:.pad-text}
+I think this book is a best seller in term of DevOps, specially for folks who just started to learn.
+
+[Next Gen DevOps](https://nextgendevops.com) 
+
+{:.pad-text}
+This book is a good one to have a global vision of DevOps. I liked how the author explain the evolution of IT from the beginning until nowadays.
+
+[Kanban : Successful Evolutionary Change for Your Technology Business](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402)
+
+{:.pad-text}
+This one is an excellent book to explain the real goal of using Agile board... Indeed is not just about sticky notes on every walls and said : We're Agile !
+
+![]({{ site.baseurl }}/img/CheatSheet/DevOpsCheatSheetImprove.png){: .center-image }
+
+## Improve your skills ##
+### Videos / Courses / Shows : ###
+
+[Channel 9 : DevOps Dimension](https://channel9.msdn.com/Shows/DevOps-Dimension)
+
+{:.pad-text}
+Join DevOps experts David Tesar, Thiago Almeida, Oguz Pastirmaci, the engineers building DevOps solutions, and partners to find out the latest news and information on DevOps practices, inside and outside Microsoft.
+
+[Channel 9 : The Ops Team](https://channel9.msdn.com/Shows/The-Ops-Team)
+
+{:.pad-text}
+Weekly show where 4 Technical Evangelists specializing in IT Operations get together to give you the deets on their 4 areas of expertise: Microsoft Azure/Cloud, On Premises technologies, Enterprise Mobility / Windows and DevOps.
+
+[MVA : Deep Dive into Azure Resource Manager Scenarios and patterns](https://mva.microsoft.com/en-US/training-courses/deep-dive-into-azure-resource-manager-scenarios-and-patterns-13793?l=bj8eVjXYB_4401937557)
+
+{:.pad-text}
+Find out how you can use Azure Resource Manager (ARM) as a tool help you manage those Resource Groups. Explore ARM with an international team of experts, who show you scripts and tools that make it easy to spin up or spin down elements of your application infrastructure in dev, test, or production.
+
+### Links / Blog Post : ###
+
+[Blog Post : VorlonJS - A Journey to DevOps](http://blogs.technet.com/b/devops/archive/2016/01/12/vorlonjs-a-journey-to-devops-introducing-the-blog-post-series.aspx)
+
+{:.pad-text}
+Awesome serie by [Julien Corioland](https://twitter.com/jcorioland) on Vorlon.js, interesting to see how VSTS can be used with non Microsoft technology !!
+
+* [Project Planning and Management with Visual Studio Team Services](http://blogs.technet.com/b/devops/archive/2016/01/12/vorlonjs-a-journey-to-devops-project-planning-with-visual-studio-team-services.aspx)
+* [Continuous Integration using GitHub and Visual Studio Team Services](http://blogs.technet.com/b/devops/archive/2016/01/19/vorlonjs-a-journey-to-devops-continuous-integration-using-github-and-visual-studio-team-services.aspx)
+* [Infrastructure as Code with Microsoft Azure and Resource Manager](http://blogs.technet.com/b/devops/archive/2016/01/27/vorlonjs-a-journey-to-devops-infrastructure-as-code-with-microsoft-azure-and-resource-manager.aspx)
+* (http://blogs.technet.com/b/devops/archive/2016/02/03/vorlonjs-a-journey-to-devops-release-management-with-visual-studio-team-services.aspx)
+
+### Books : ###
+
+[Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation](http://www.amazon.com/Value-Stream-Mapping-Organizational-Transformation/dp/0071828915/ref=sr_1_1?ie=UTF8&amp;qid=1455485744&amp;sr=8-1&amp;keywords=value+stream+mapping)
+
+{:.pad-text}
+Value stream mapping--an essential but underused methodology--is a proven approach to help you visualize and resolve disconnects, redundancies, and gaps in your value delivery system. More than merely a tool to eliminate operational waste, value stream mapping is a highly effective means to transform leadership thinking, define strategy and priorities, and create customer-centric work flow.
+
+[Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](http://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1455485810&amp;sr=1-1&amp;keywords=continuous+delivery)
+
+{:.pad-text}
+Jez Humble and David Farley begin by presenting the foundations of a rapid, reliable, low-risk delivery process. Next, they introduce the “deployment pipeline,” an automated process for managing all changes, from check-in to release. Finally, they discuss the “ecosystem” needed to support continuous delivery, from infrastructure, data and configuration management to governance.
+
+## Evidence / Customer Success ##
+
+[Channel 9 : kCura: DevOps customer story with Chef and Azure](https://channel9.msdn.com/Events/Ignite/2015/C9-27)
+
+{:.pad-text}
+Sameer Doshi from kCura tells us how their company has achieved some business great results across development and operations while utilizing Microsoft Azure and Chef to implement the DevOps practice of Infrastructure as code amongst other things.
+
+[White Paper : Rakuten](https://aka.ms/devops_rakuten) 
+
+{:.pad-text}
+Tokyo-based Rakuten is one of the largest electronic commerce and Internet companies in Japan. Rakuten’s Ichiba ecommerce platform is among the world’s largest by sales. Discover how this company is using DevOps Practices.
+
+## Hands on lab (HOL) / Practices 
+
+[How to enable DevOps Practices with PartsUnlimited Apps by [David Tesar](https://twitter.com/dtzar)](http://www.itproguy.com/how-to-enable-devops-practices-with-partsunlimited-apps)
+
+{:.pad-text}
+Parts Unlimited is an example eCommerce website site based for training purposes on the website described in chapters 31-35 of The Phoenix Project
+
+[Parts Unlimited GitHub Repo](https://github.com/Microsoft/PartsUnlimited/tree/aspnet45)
+
+{:.pad-text}
+The website, built on ASP.NET 5 MVC 6 includes product listings by category, product details, shopping cart, order history, product recommendations, search, and more using Microsoft Technology.
+
+{:.pad-text}
+You can start with this HOL to learn some DevOps Concepts with Visual Studio Team Services (VSTS) and Azure :
+
+* [HOL - Parts Unlimited WebSite Continuous Integration with Visual Team Services](https://github.com/Microsoft/PartsUnlimited/blob/aspnet45/docs/HOL_Continuous_Integration/README.md)
+* [HOL - Continuous Deployment with Release Management in Visual Studio Team Services](https://github.com/Microsoft/PartsUnlimited/blob/aspnet45/docs/HOL_Continuous_Deployment_Release_Management/README.md)
+* [Others HOL on Parts Unlimited](https://github.com/Microsoft/PartsUnlimited/tree/aspnet45/docs)
+
+[Parts Unlimited using DotNet Core](https://github.com/Microsoft/PartsUnlimited/tree/master)
+
+* [HOL - Parts Unlimited WebSite Continuous Integration with Visual Team Services](https://github.com/Microsoft/PartsUnlimited/blob/master/docs/HOL-Continuous_Integration/README.md)
+* [HOL - Continuous Deployment with Release Management in Visual Studio Team Services](https://github.com/Microsoft/PartsUnlimited/blob/master/docs/HOL-Continuous_Deployment/Lab.md)
+
+[Parts Unlimited MRP GitHub Repo](https://github.com/Microsoft/PartsUnlimitedMRP)
+
+{:.pad-text}
+The application uses entirely **open source** software including Linux, Java, Apache, and MongoDB which creates a web front end, an order service, and an integration service.
+
+{:.pad-text}
+You can start with this HOL to learn some DevOps Concepts with Visual Studio Team Services (VSTS), Open Source Technology and Azure :
+
+* [HOL - Parts Unlimited MRP App Continuous Integration with Visual Studio Team Services Build](https://github.com/Microsoft/PartsUnlimitedMRP/blob/master/docs/HOL_Continuous-Integration/README.md)
+* [HOL - Parts Unlimited MRP App Continuous Deployment with Visual Studio Team Services](https://github.com/Microsoft/PartsUnlimitedMRP/blob/master/docs/HOL_Continuous-Deployment/README.md)
+* [HOL - Parts Unlimited MRP  Autoscaling Load Testing (DEPRECATED)](https://github.com/Microsoft/PartsUnlimitedMRP/blob/master/docs/HOL_Autoscaling-Load-Testing/README.md)
+* [HOL - Parts Unlimited MRP  Provisioning Deploying Environments Using Puppet](https://github.com/Microsoft/PartsUnlimitedMRP/blob/master/docs/HOL_Deploying-Using-Puppet/README.md)
+* [Others HOL on Parts Unlimited MRP](https://github.com/Microsoft/PartsUnlimitedMRP/tree/master/docs)
+
+[Love Java ? So do we !!](http://java.visualstudio.com/)
+
+{:.pad-text}
+Are you developing in Java? Do you need a good set of agile tools to maximize your team's productivity ? This lab will show you how using Visual Studio Team Services and running your build, automated testing, deployment, using Git and more...
+
+* [Create a Git repo, Build a Web App and Deploy](http://java.visualstudio.com/Docs/gettingstarted/intro)
+* [Agile Git Workflows, Create a backlog, Plan Work, Implement Changes, Verify and Merge](http://java.visualstudio.com/Docs/agilegitworkflows/intro)
+* [Tools, integration with Eclipse or IntelliJ](http://java.visualstudio.com/Docs/tools/intro)
+
+[Hands-on Training for Open Source DevOps Workflow](https://ritazh.github.io/devopsfun)
+
+{:.pad-text}
+Check this awesome HOL on Node.js + MongoDB + Jenkins + Dokku and more !!!
+
+* [Module 0 : Preparation (Git / Node.js / NPM / VS Code)](https://ritazh.github.io/devopsfun/installing-node)
+* [Module 1 : Developing App (Building Node.js application, Installing and configuring MongoDB](https://ritazh.github.io/devopsfun/node-app)
+* [Module 2 : Provisioning Platform for Development and Testing (Provisioning a Dokku environment on Azure)](https://ritazh.github.io/devopsfun/provisioning-platform)
+* [Module 3 : Deploying App : (Git, MongoDB)](https://ritazh.github.io/devopsfun/deploying-app)
+* [Module 4 : Provisioning Continuous Integration Server (Jenkins)](https://ritazh.github.io/devopsfun/continuous-integrate)
+* [Module 5 : Continuously Integrating and Deploying an App (Jenkins with Dokku)](https://ritazh.github.io/devopsfun/continuous-deploy-app)
+* [Module 6 : Managing App (Scaling)](https://ritazh.github.io/devopsfun/managing-app)
+
+[DevOps practices with VSTS + secure Azure Service Fabric](https://github.com/djzeka/VSTS-AzureServiceFabric)
+
+* [Creating secure Azure Service Fabric Cluster](https://github.com/djzeka/VSTS-AzureServiceFabric/blob/master/docs/Creating%20secure%20Azure%20Service%20Fabric%20Cluster.md)
+* [Connecting VSTS &amp; Azure Service Fabric](https://github.com/djzeka/VSTS-AzureServiceFabric/blob/master/docs/Connecting%20VSTS%20%26%20Azure%20Service%20Fabric.md)
+* [Application Delivery &amp; DevOps practices with Azure Service Fabric](https://github.com/djzeka/VSTS-AzureServiceFabric/blob/master/docs/Application%20Delivery%20%26%20DevOps%20practices%20with%20Azure%20Service%20Fabric.md)
+
+## Miscellaneous ##
+
+* [Try and use Visual Studio for free](https://www.visualstudio.com/products/free-developer-offers-vs.aspx)
+* [Try Microsoft Azure for free](https://azure.microsoft.com/en-us/pricing/free-trial)
+
+
+## Conclusion ##
+
+This article is just a beginning, with few resources that help me to understand and improve my skills in term of DevOps.
+
+I will add and update my links very often, so don't hesitate to [ping me on twitter](https://twitter.com/Ju_Stroh) or leave a comment if you have ideas or you're thinking some links is missing !
+
+Thanks

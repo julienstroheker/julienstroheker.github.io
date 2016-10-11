@@ -401,3 +401,14 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.pad-text
+{
+    padding-left: 15px;
+}
