@@ -2,7 +2,7 @@
     "name": "jstrohekerblog",
     "title": "jstroheker Blog",
     "version": "1.0.0",
-    "homepage": "http://jstroheker.com",
+    "homepage": "http://blog.jstroheker.com",
     "author": "Julien Stroheker",
     "license": "MIT",
     "devDependencies": {

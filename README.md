@@ -1,6 +1,6 @@
 # jstroheker.com Blog Source Code using Jekyll
 
-[Click here to visit my blog](http://jstroheker.com)
+[Click here to visit my blog](http://blog.jstroheker.com)
 
 ## Behing the scene
 
