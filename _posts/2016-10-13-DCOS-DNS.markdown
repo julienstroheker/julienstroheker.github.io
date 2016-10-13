@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      "Marathon-LB on DCOS clarifications"
+subtitle:   "Expose publicly different applications on DCOS"
+date:       2016-10-13 12:00:00
+author:     "Julien Stroheker"
+header-img: "img/post-bg-02.jpg"
+---
+
+# My context
+
+Since a few months now, I am having fun with DCOS from mesosphere. 
+I can understand that it is not very simple when you start from scratch, like me, in the containers framework world.
+
+First I had to pick one, the three major one that I can see are :
+* Kubernetes from Google
+* Swarm from Docker
+* DCOS from mesosphere
+
+Because I didn't want to focus on all of them, I had to pick one to start learning how it works, I decided to start with DCOS. 
+
+Here are my three main reasons why I picked that one :
+* DCOS is used in production by big company like : Twitter or Paypal ;
+* It provide some Web portals, and I like nice dashboards ;)
+* On Microsoft Azure, we have a service called : Azure Containers Service (ACS) and it is very simple to spin up a environment and start to play with it ;
+
+# Introduction
+
+There are a bunch of different articles on Internet about DCOS so I don't want to do an other 101 about how you can start with DCOS.
+
+I just want to clarify a simple point about : How you can use the Marathon-LB application and configure it to give access at different applications inside your cluster fron the outside with different FQDN.
+
+For example, if you have multiple differents web applications running in multiple differents services inside your DCOS cluster, what configuration you should use and how it works behind the scene.
+
+# DCOS on Azure with ACS
+
+ACS is very well documented and easy to deploy. In my case, I deployed a cluster with 1 master and 5 agents.
+
+It's important to understand the networking composants in place. From the top we have ... 
