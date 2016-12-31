@@ -21,11 +21,11 @@ If like me, you don't have a good memory to retain all the commands, and have Do
 
 You just have to run the following command :
 
-`docker run -it julienstroheker/dockerazurespn <NameApp> <PasswordApp>`
+`docker run -it julienstroheker/add-azure-spn <NameApp> <PasswordApp>`
 
 For example : 
 
-`$ docker run -it julienstroheker/dockerazurespn MyAwesomeApplication MyAw3s0meP@ssw0rd!`
+`$ docker run -it julienstroheker/add-azure-spn MyAwesomeApplication MyAw3s0meP@ssw0rd!`
 
 After less than 1 minute, you will have a nice output like this, ready to be copy and paste :
 
